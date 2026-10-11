@@ -1,0 +1,1 @@
+export const metadata={title:'Blog Admin | Zehavah Handler',robots:{index:false,follow:false}};export default function Layout({children}){return children}
