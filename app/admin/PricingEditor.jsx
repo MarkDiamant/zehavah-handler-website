@@ -1,0 +1,6 @@
+'use client';
+import {useEffect,useState} from 'react';
+export default function PricingEditor({supabase,tenant}){const[value,setValue]=useState(''),[status,setStatus]=useState('');
+useEffect(()=>{supabase.from('website_content_settings').select('value').eq('tenant_id',tenant).eq('key','pricing_text').maybeSingle().then(({data})=>{if(data?.value){try{setValue(JSON.parse(data.value).map(x=>x.join('\n')).join('\n\n'))}catch{}}})},[supabase,tenant]);
+async function save(e){e.preventDefault();const sections=value.trim().split(/\n\s*\n/).map(x=>{const a=x.split('\n');return[a[0].trim(),a.slice(1).join('\n').trim()]});if(sections.some(x=>!x[0]||!x[1])){setStatus('Each section needs a heading and description.');return}const{error}=await supabase.from('website_content_settings').upsert({tenant_id:tenant,key:'pricing_text',value:JSON.stringify(sections),updated_at:new Date().toISOString()});setStatus(error?.message||'Fees saved. Your website will show the new prices.')};
+return <form onSubmit={save}><h2>Edit therapy fees</h2><p>Enter each heading, then its description on the next line. Separate sections with a blank line. Save to update your Fees page.</p><textarea rows={18} value={value} onChange={e=>setValue(e.target.value)} required/><button type="submit">Save fees</button><p role="status">{status}</p></form>}
