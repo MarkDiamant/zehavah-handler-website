@@ -1,5 +1,5 @@
-import SiteFooter from './components/SiteFooter';
 'use client';
+import SiteFooter from './components/SiteFooter';
 import {useEffect,useState} from 'react';
 import {ArrowUpRight,ArrowRight,Menu,X,Sun,Brain,Heart, Moon,MoveUpRight,Mail,Phone,MapPin,ChevronDown} from 'lucide-react';
 const mail='handler.zehavah@gmail.com';
