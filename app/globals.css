@@ -125,3 +125,31 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 @media(min-width:761px) and (max-width:1020px){.detailpage .editorial-hero{grid-template-columns:minmax(0,1fr) minmax(0,44%);gap:26px;padding-left:5%!important;padding-right:5%!important}.editorial-hero .editorial-copy h1{font-size:clamp(44px,5.4vw,64px)!important}}
 
 .cms-login-heading{margin:0 0 28px}.cms-login-heading .brand{display:inline-flex;flex-direction:column;text-decoration:none;margin-bottom:22px}.cms-login-heading h1{font-size:clamp(28px,5vw,44px);margin:0 0 8px}.cms-login-heading p{font-size:16px;color:#60736a}.cms:has(.cms-login-heading){max-width:540px;margin:55px auto;background:#fdfcf7;border:1px solid #e3e8e1;border-radius:20px;padding:42px}.cms:has(.cms-login-heading) form button{width:100%;text-align:center}.cms:has(.cms-login-heading) form button[type=button]{background:transparent;color:#344f48;border:1px solid #b8c8bd}@media(max-width:600px){.cms:has(.cms-login-heading){margin:15px 4%;padding:25px 20px}}
+
+
+/* Expressive secondary-page typography and restrained motion */
+.detailpage .editorial-hero .editorial-eyebrow{display:inline-block!important;font-family:inherit;font-size:clamp(17px,2.1vw,27px)!important;font-weight:650!important;letter-spacing:-.035em!important;line-height:1.2!important;text-transform:none!important;color:#587465!important;max-width:500px;position:relative;padding-bottom:15px}
+.detailpage .editorial-hero .editorial-eyebrow::after{content:'';position:absolute;left:0;bottom:0;width:clamp(48px,7vw,100px);height:3px;background:#b29a7f;border-radius:4px;transform-origin:left center;animation:editorialLine .9s .3s both}
+.hero-sleep .editorial-eyebrow{font-family:Georgia,serif!important;font-size:clamp(23px,3vw,38px)!important;font-style:italic;font-weight:400!important;color:#497b79!important}
+.hero-contact .editorial-eyebrow{font-size:clamp(20px,2.8vw,34px)!important;color:#526b59!important}
+.hero-about-me .editorial-eyebrow{font-family:Georgia,serif!important;font-size:clamp(21px,2.65vw,33px)!important;font-weight:400!important;color:#886d6b!important}
+.hero-fees .editorial-eyebrow{font-size:clamp(19px,2.3vw,30px)!important;color:#977557!important}
+.hero-your-therapy .editorial-eyebrow{font-size:clamp(18px,2.5vw,32px)!important;color:#50715c!important}
+.hero-articles .editorial-eyebrow{font-family:Georgia,serif!important;font-size:clamp(22px,3vw,37px)!important;font-weight:400!important}
+.editorial-hero .editorial-copy{animation:editorialTextIn .85s cubic-bezier(.18,.7,.22,1) both}
+.editorial-hero .editorial-copy h1{animation:editorialTextIn .85s .13s cubic-bezier(.18,.7,.22,1) both}
+.editorial-hero .editorial-copy p{animation:editorialTextIn .85s .24s cubic-bezier(.18,.7,.22,1) both}
+.editorial-hero .editorial-visual{animation:editorialPhotoIn 1.15s .14s cubic-bezier(.17,.67,.2,1) both}
+.editorial-hero .editorial-visual>img{transition:transform 1s cubic-bezier(.2,.7,.2,1),filter .8s}
+.editorial-hero .editorial-visual:hover>img{transform:scale(1.025)}
+.editorial-hero .editorial-frame{animation:editorialFrameIn 1.25s .35s both}
+.editorial-hero .editorial-corner{animation:editorialFloat 6s ease-in-out 1.4s infinite alternate}
+.detailpage .detailsections section{animation:editorialTextIn .8s both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.detailpage .detailportrait img{animation:editorialPhotoIn .95s both;animation-timeline:view();animation-range:entry 0% cover 32%}
+@keyframes editorialTextIn{from{opacity:0;transform:translateY(23px)}to{opacity:1;transform:translateY(0)}}
+@keyframes editorialPhotoIn{from{opacity:0;transform:translateY(35px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes editorialFrameIn{from{opacity:0;transform:translate(18px,16px)}to{opacity:1;transform:translate(0,0)}}
+@keyframes editorialLine{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes editorialFloat{from{transform:translateY(0)}to{transform:translateY(-12px)}}
+@media(max-width:760px){.detailpage .editorial-hero .editorial-eyebrow{font-size:clamp(18px,5vw,25px)!important;line-height:1.24!important;letter-spacing:-.02em!important}.hero-sleep .editorial-eyebrow,.hero-about-me .editorial-eyebrow,.hero-articles .editorial-eyebrow{font-size:clamp(23px,6vw,30px)!important}.editorial-hero .editorial-visual{animation-duration:.8s}.detailpage .editorial-hero{gap:30px!important}}
+@media(prefers-reduced-motion:reduce){.editorial-hero .editorial-copy,.editorial-hero .editorial-copy h1,.editorial-hero .editorial-copy p,.editorial-hero .editorial-visual,.editorial-hero .editorial-frame,.editorial-hero .editorial-corner,.editorial-hero .editorial-eyebrow::after,.detailpage .detailsections section,.detailpage .detailportrait img{animation:none!important;transform:none!important}.editorial-hero .editorial-visual>img{transition:none!important}}
