@@ -28,3 +28,5 @@
 .ds-credit .ds-built{display:inline-block!important;white-space:nowrap!important;position:static!important;transform:none!important;margin:0!important}
 .ds-credit .ds-logo{display:inline-flex!important;align-items:center!important;position:static!important;margin:0!important}
 .ds-credit .ds-want{text-decoration:none!important;border-bottom:0!important}
+
+footer{position:relative;flex-wrap:wrap!important}.footer-copyright{width:100%;flex:0 0 100%;text-align:center;font-size:12px;color:#788080;margin-top:18px;padding-top:15px;border-top:1px solid rgba(70,90,80,.12)}
