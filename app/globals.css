@@ -21,3 +21,10 @@
 .blog-entry{display:block;overflow:hidden}.blog-cover{width:100%;height:220px;object-fit:cover;border-radius:14px;margin-bottom:18px}.blog-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}@media(max-width:720px){.blog-list{grid-template-columns:1fr}}
 
 .ds-credit .ds-logo{background:#0b2038!important;padding:4px 6px!important;border-radius:4px!important;display:inline-flex!important;align-items:center!important}.ds-credit .ds-logo img{display:block!important;width:100px!important;height:auto!important;max-width:none!important}.ds-credit .ds-built{font-size:11px!important}.ds-credit .ds-top{gap:7px!important}.ds-credit .ds-tagline{font-size:10px!important}.ds-credit .ds-want{font-size:11px!important;color:#21ae56!important}
+
+/* DS footer: match Poll & See's original horizontal logo credit */
+.ds-credit,.ds-credit:hover,.ds-credit:focus,.ds-credit *,.ds-credit:hover *{text-decoration:none!important}
+.ds-credit .ds-top{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:8px!important}
+.ds-credit .ds-built{display:inline-block!important;white-space:nowrap!important;position:static!important;transform:none!important;margin:0!important}
+.ds-credit .ds-logo{display:inline-flex!important;align-items:center!important;position:static!important;margin:0!important}
+.ds-credit .ds-want{text-decoration:none!important;border-bottom:0!important}
