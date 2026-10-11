@@ -1,5 +1,5 @@
-import PricingEditor from './PricingEditor';
 'use client';
+import PricingEditor from './PricingEditor';
 import {useEffect,useState} from 'react';
 import {createClient} from '@supabase/supabase-js';
 const URL=process.env.NEXT_PUBLIC_SUPABASE_URL,KEY=process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,TENANT='21c40433-5ebb-4412-bdd4-42357b167a2d';
