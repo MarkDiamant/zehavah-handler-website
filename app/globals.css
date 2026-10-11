@@ -156,3 +156,6 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 
 /* Compact Diamant Solutions footer credit on desktop only */
 @media(min-width:761px){footer .ds-credit{gap:3px!important}footer .ds-credit .ds-top{gap:6px!important}footer .ds-credit .ds-logo{padding:3px 5px!important}footer .ds-credit .ds-logo img{width:78px!important}footer .ds-credit .ds-built{font-size:10px!important}footer .ds-credit .ds-tagline{font-size:9px!important;letter-spacing:0!important}footer .ds-credit .ds-want{font-size:10px!important}footer .footer-end{transform:scale(.94);transform-origin:right center}}
+
+/* Article imagery: preserve faces and avoid duplicate hero/first card */
+.hero-articles .editorial-visual>img{object-position:center 12%!important}.blog-list .blog-cover{object-position:center 24%!important}.blog-list .blog-entry{min-width:0}.blog-list .blog-cover{display:block;max-width:100%}@media(max-width:760px){.hero-articles .editorial-visual>img{object-position:center 10%!important}.blog-list .blog-cover{object-position:center 18%!important}}
