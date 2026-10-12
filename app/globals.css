@@ -393,3 +393,23 @@ section.insomnia-quote span,section.home-quote.insomnia-quote span{color:#715a35
  .insomnia-hero-photo::after{border-radius:14px 85px 14px 85px}
 }
 @media(max-width:480px){.insomnia-hero-photo{min-height:250px}.insomnia-page .insomnia-hero-split h1{font-size:clamp(35px,9vw,46px)}}
+
+
+/* Align homepage image framing with interior editorial pages */
+@media(min-width:851px){
+ .hero{grid-template-columns:1fr 1fr!important;gap:clamp(20px,3vw,52px)!important;padding:clamp(35px,4vw,72px) 5.5%!important;min-height:660px!important;align-items:center!important;overflow:visible!important}
+ .hero-copy{padding:24px 0!important;min-width:0}
+ .hero-visual{min-height:540px!important;height:100%;max-height:650px;overflow:visible!important;background:transparent!important}
+ .hero-photo{inset:0!important;border-radius:16px 145px 16px 145px!important;box-shadow:0 22px 55px rgba(35,57,46,.12);overflow:hidden}
+ .hero-visual::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid #b39762;border-radius:16px 145px 16px 145px;pointer-events:none}
+ .hero-visual .orbit-trail,.hero-vertical{display:none!important}
+}
+@media(max-width:850px){
+ .hero{display:flex!important;flex-direction:column!important;padding:28px 6% 44px!important;gap:26px!important;min-height:0!important;overflow:visible!important}
+ .hero-copy{padding:10px 0!important}
+ .hero-visual{min-height:320px!important;height:360px!important;overflow:visible!important;background:transparent!important}
+ .hero-photo{inset:0!important;border-radius:12px 85px 12px 85px!important}
+ .hero-visual::after{content:"";position:absolute;inset:12px -8px -8px 12px;border:1px solid #b39762;border-radius:12px 85px 12px 85px;pointer-events:none}
+ .hero-visual .orbit-trail,.hero-vertical{display:none!important}
+}
+.detailhero.hero-articles .editorial-eyebrow:empty{display:none!important}
