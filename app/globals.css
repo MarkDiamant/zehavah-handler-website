@@ -418,17 +418,31 @@ section.insomnia-quote span,section.home-quote.insomnia-quote span{color:#715a35
 footer .ds-credit .ds-built,footer .ds-credit .ds-tagline{color:#fff!important;opacity:1!important}
 
 
-/* Noticeable but calm landscape zoom, continuously reversing without jumps */
+/* Zoom the photograph inside a fixed curved frame, never the frame itself. */
 .hero-visual .hero-photo{
+ transform:none!important;
+ animation:none!important;
+ will-change:auto!important;
+ overflow:hidden!important;
+ background-image:none!important;
+ background-color:#9cb4a4!important;
+}
+.hero-visual .hero-photo::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ display:block;
+ border-radius:inherit;
+ background:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1300&q=85') center center/cover no-repeat;
  transform:scale(1);
  transform-origin:center center;
- animation:zh-home-landscape-breathe 55s linear infinite alternate!important;
+ animation:zh-home-photo-inner-zoom 55s linear infinite alternate;
  will-change:transform;
 }
-@keyframes zh-home-landscape-breathe{
+@keyframes zh-home-photo-inner-zoom{
  from{transform:scale(1)}
  to{transform:scale(1.14)}
 }
 @media(prefers-reduced-motion:reduce){
- .hero-visual .hero-photo{animation:none!important;transform:none!important;will-change:auto}
+ .hero-visual .hero-photo::before{animation:none!important;transform:none!important;will-change:auto}
 }
