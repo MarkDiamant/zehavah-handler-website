@@ -267,3 +267,31 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 .insomnia-quote{border-top:3px solid #b39762}
 @media(max-width:760px){.insomnia-image-aside{grid-template-columns:1fr}.insomnia-aside-image{min-height:240px}.insomnia-aside-copy{padding:32px 6%}.insomnia-image-break{min-height:240px;padding:30px 6%}.intro{padding-top:36px!important}.original-quote{padding:15px 18px!important}.ds-credit{transform:scale(.85)!important;transform-origin:left center!important}}
 @media(prefers-reduced-motion:reduce){.button,.insomnia-step-number,.insomnia-faq{transition:none!important}}
+
+
+/* Calm, unified water-light quote treatment */
+.insomnia-quote,.quote,.original-quote{
+ position:relative!important;isolation:isolate;overflow:hidden;
+ background:linear-gradient(115deg,#e5ebe4 0%,#f1efe5 37%,#dce8df 70%,#ece9df 100%)!important;
+ color:#344d46!important;border-top:1px solid #c1ac7e!important;
+}
+.insomnia-quote:before,.quote:before,.original-quote:after{
+ content:"";position:absolute;z-index:-1;pointer-events:none;
+ inset:-60% -25%;
+ background:repeating-radial-gradient(ellipse at 36% 48%,transparent 0,transparent 38px,#ffffff5e 40px,#c0d7cd44 43px,transparent 49px,transparent 84px);
+ transform:rotate(-10deg) scale(1.05);
+ opacity:.5;animation:zh-waterlight 24s ease-in-out infinite alternate;
+}
+.insomnia-quote:after,.quote:after{
+ content:"";position:absolute;z-index:-1;pointer-events:none;inset:0;
+ background:linear-gradient(110deg,transparent 20%,#fff7 42%,transparent 64%);
+ background-size:220% 100%;animation:zh-glimmer 32s ease-in-out infinite alternate;opacity:.45;
+}
+.insomnia-quote blockquote,.quote blockquote,.original-quote blockquote,
+.insomnia-quote p,.quote p,.original-quote p{color:#344d46!important;text-shadow:none!important;position:relative;z-index:1}
+.insomnia-quote span,.quote span,.original-quote span{color:#806b49!important;position:relative;z-index:1}
+.original-quote{border-left:3px solid #b39762!important;background:linear-gradient(115deg,#e5ebe4,#f1efe5,#dce8df)!important}
+@keyframes zh-waterlight{0%{transform:translate(-1.5%,-1%) rotate(-10deg) scale(1.03)}100%{transform:translate(1.5%,1%) rotate(-8deg) scale(1.11)}}
+@keyframes zh-glimmer{0%{background-position:100% 0}100%{background-position:0% 0}}
+@media(prefers-reduced-motion:reduce){.insomnia-quote:before,.insomnia-quote:after,.quote:before,.quote:after,.original-quote:after{animation:none!important}}
+@media(max-width:700px){.insomnia-quote:before,.quote:before,.original-quote:after{opacity:.3;animation-duration:35s}.insomnia-quote:after,.quote:after{opacity:.25}}
