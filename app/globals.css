@@ -416,3 +416,19 @@ section.insomnia-quote span,section.home-quote.insomnia-quote span{color:#715a35
 
 /* Footer credit contrast: retain existing dimensions */
 footer .ds-credit .ds-built,footer .ds-credit .ds-tagline{color:#fff!important;opacity:1!important}
+
+
+/* Slow, seamless homepage landscape breathing effect: 120s each direction */
+.hero-visual .hero-photo{
+ transform:scale(1);
+ transform-origin:center center;
+ animation:zh-home-landscape-breathe 120s ease-in-out infinite alternate;
+ will-change:transform;
+}
+@keyframes zh-home-landscape-breathe{
+ from{transform:scale(1)}
+ to{transform:scale(1.05)}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-visual .hero-photo{animation:none!important;transform:none!important;will-change:auto}
+}
