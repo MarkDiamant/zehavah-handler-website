@@ -234,3 +234,36 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 .insomnia-ending p{font-size:12px;line-height:1.8;color:#d8ded5;max-width:800px;margin:25px auto 0}
 @media(max-width:680px){.insomnia-grid{grid-template-columns:1fr}.insomnia-hero,.insomnia-section,.insomnia-ending{padding:42px 6%}}
 @media(prefers-reduced-motion:reduce){.reveal{animation:none!important;transition:none!important}}
+
+
+/* October visual polish: quiet editorial gold, restrained motion, responsive */
+:root{--zh-gold:#b39762}
+.original-quote{position:relative;padding:18px 24px 22px!important;margin-bottom:24px!important;border-left:3px solid var(--zh-gold);background:linear-gradient(90deg,#eeeade 0%,transparent 85%);max-width:850px}
+.original-quote:before{content:"";position:absolute;top:-10px;left:24px;width:52px;height:2px;background:var(--zh-gold)}
+.intro{padding-top:50px!important}
+.intro .original-quote span{color:#947747!important}
+.hero-copy h1 em,.section-kicker,.editorial-eyebrow{ text-decoration-color:var(--zh-gold)}
+.header .brand span,.footer-brand span{color:var(--zh-gold)!important}
+.headcta{border:1px solid #b3976266}
+.button{transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.button:hover{transform:translateY(-2px);box-shadow:0 7px 20px #26382e22}
+.ds-credit{transform:scale(.91)!important;opacity:.88!important}
+.ds-want{display:block!important;color:#b39762!important;font-weight:650!important;font-size:12px!important;margin-top:4px}
+.therapy-insomnia-link{display:inline-flex!important;align-items:center;justify-content:center;margin-top:18px;text-decoration:none!important}
+.detailpage .booking-block a.button{display:inline-flex;margin:8px;align-items:center;justify-content:center;text-decoration:none!important}
+.insomnia-hero{position:relative;overflow:hidden}
+.insomnia-hero:after{content:"";position:absolute;width:260px;height:260px;right:-100px;top:-80px;border:1px solid #b3976288;border-radius:50%;pointer-events:none}
+.insomnia-image-break{min-height:330px;background:linear-gradient(90deg,#203c3859,#203c380d),url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=85') center 55%/cover;display:flex;align-items:flex-end;padding:45px max(6%,calc((100vw - 1050px)/2))}
+.insomnia-image-break span{font:italic clamp(25px,3vw,43px) Georgia,serif;color:white;text-shadow:0 2px 12px #0008}
+.insomnia-step-number{display:inline-grid!important;place-items:center;width:58px;height:58px;border:1px solid #b39762;border-radius:50%;background:#f5f0e5;color:#78613d!important;font:italic 30px Georgia,serif!important;transition:transform .3s ease,background .3s ease}
+.insomnia-grid article:hover .insomnia-step-number{transform:rotate(-10deg) scale(1.08);background:#e9dec8}
+.insomnia-image-aside{display:grid;grid-template-columns:34% 66%;background:#edf0e8}
+.insomnia-aside-image{min-height:460px;background:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85') center/cover}
+.insomnia-aside-copy{padding:clamp(36px,5vw,72px)}
+.insomnia-aside-copy h2{font:normal clamp(30px,4vw,48px) Georgia,serif;margin:0 0 20px}
+.insomnia-aside-copy .insomnia-grid{grid-template-columns:1fr}
+.insomnia-faq{transition:padding-left .25s ease,border-color .25s ease}
+.insomnia-faq:hover{padding-left:10px;border-color:#b39762}
+.insomnia-quote{border-top:3px solid #b39762}
+@media(max-width:760px){.insomnia-image-aside{grid-template-columns:1fr}.insomnia-aside-image{min-height:240px}.insomnia-aside-copy{padding:32px 6%}.insomnia-image-break{min-height:240px;padding:30px 6%}.intro{padding-top:36px!important}.original-quote{padding:15px 18px!important}.ds-credit{transform:scale(.85)!important;transform-origin:left center!important}}
+@media(prefers-reduced-motion:reduce){.button,.insomnia-step-number,.insomnia-faq{transition:none!important}}
