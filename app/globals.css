@@ -449,3 +449,11 @@ footer .ds-credit .ds-built,footer .ds-credit .ds-tagline{color:#fff!important;o
 
 /* Clear two-line label within homepage circular scroll link */
 .intro .circle-link{font-size:12px!important;line-height:1.3!important;font-weight:650!important;text-align:center!important;letter-spacing:.01em!important;color:#314c3f!important;text-decoration:none!important}
+
+/* Keep the compact footer credit truly centred on mobile, independent of legacy transforms. */
+@media(max-width:760px){
+ footer .footer-end{width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;transform:none!important;margin:0 auto!important}
+ footer .footer-end .ds-credit{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;margin:0 auto!important;transform:none!important;transform-origin:center center!important;max-width:100%!important}
+ footer .footer-end .ds-top{justify-content:center!important}
+ footer .footer-end .ds-tagline,footer .footer-end .ds-want{text-align:center!important}
+}
