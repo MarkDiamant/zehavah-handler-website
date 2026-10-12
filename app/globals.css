@@ -199,3 +199,38 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 .cms-image{max-width:260px;max-height:180px;object-fit:cover;border-radius:12px;margin-bottom:16px}
 .cms [role=status]:not(:empty){padding:10px 14px;border-radius:10px;background:#eff6ee;color:#315e40}
 @media(max-width:780px){.cms{margin:24px auto 65px;padding:0 15px}.cms-head{align-items:flex-start;flex-direction:column}.cms-stats{gap:8px}.cms-stats>div{padding:15px 12px}.cms-stats strong{font-size:26px}.cms-grid{grid-template-columns:1fr}.cms-grid aside,.cms-editor{padding:18px}.cms-savebar{align-items:stretch;flex-direction:column}.cms-savebar button{width:100%}}
+
+
+/* Zehavah October review refinements */
+:root{--zh-gold:#b59a65;--zh-charcoal:#2c3431}
+.hero-stamp,.sleep-orb,.sleep-ring{display:none!important}
+.hero-photo{background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1300&q=85')!important;background-size:cover!important;background-position:center!important}
+.sleep-calm-art{background:linear-gradient(155deg,#263b3a,#59736b 65%,#ad9673)!important}
+.sleep-calm-art:after{content:'';position:absolute;inset:14%;border:1px solid #c6ae7d66;border-radius:50%}
+.detailpage .detailsections p,.hero-lead,.about-text p,.sleep-copy p,.intro-bottom p{color:#39473e!important}
+.reveal{opacity:1!important;transform:none!important;visibility:visible!important}
+.ds-credit{transform:scale(.72)!important;transform-origin:right center!important;opacity:.6}
+.insomnia-page{background:#f9f8f2;color:var(--zh-charcoal);font-family:inherit}
+.insomnia-hero,.insomnia-section,.insomnia-ending{padding:clamp(45px,7vw,95px) max(6%,calc((100vw - 1050px)/2))}
+.insomnia-hero{background:#eaf0e9}
+.insomnia-kicker{font-size:12px;letter-spacing:.2em;font-weight:750;color:#907749}
+.insomnia-hero h1{font-family:Georgia,serif;font-size:clamp(40px,6vw,76px);line-height:1.12;letter-spacing:-.035em;max-width:850px;margin:20px 0}
+.insomnia-hero p,.insomnia-section p,.insomnia-section li{font-size:clamp(16px,1.7vw,19px);line-height:1.75;max-width:780px;color:#3d4a42}
+.insomnia-lead{font-weight:700}
+.insomnia-hero .button{margin-top:20px}
+.insomnia-quote{padding:50px 8%;text-align:center;background:#303b36;color:#f5eee0}
+.insomnia-quote blockquote{font-family:Georgia,serif;font-style:italic;font-size:clamp(22px,3vw,36px);max-width:900px;margin:0 auto 14px}
+.insomnia-quote span{color:#c5ae7c}
+.insomnia-section{border-bottom:1px solid #dce3d8}
+.insomnia-section h2,.insomnia-ending h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,48px);margin:0 0 24px}
+.insomnia-section ul{padding-left:25px}
+.insomnia-section li{margin-bottom:10px}
+.insomnia-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px}
+.insomnia-grid article{padding:28px;background:#fff;border:1px solid #e1e8dd;border-radius:16px}
+.insomnia-grid article span{color:#a68d5f;font-weight:700}
+.insomnia-grid h3,.insomnia-faq h3{font-size:21px;color:#2b4636;margin:10px 0}
+.insomnia-faq{padding:20px 0;border-bottom:1px solid #e1e8dd}
+.insomnia-ending{background:#303b36;color:#fff;text-align:center}
+.insomnia-ending p{font-size:12px;line-height:1.8;color:#d8ded5;max-width:800px;margin:25px auto 0}
+@media(max-width:680px){.insomnia-grid{grid-template-columns:1fr}.insomnia-hero,.insomnia-section,.insomnia-ending{padding:42px 6%}}
+@media(prefers-reduced-motion:reduce){.reveal{animation:none!important;transition:none!important}}
