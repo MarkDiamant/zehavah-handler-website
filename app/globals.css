@@ -413,3 +413,6 @@ section.insomnia-quote span,section.home-quote.insomnia-quote span{color:#715a35
  .hero-visual .orbit-trail,.hero-vertical{display:none!important}
 }
 .detailhero.hero-articles .editorial-eyebrow:empty{display:none!important}
+
+/* Footer credit contrast: retain existing dimensions */
+footer .ds-credit .ds-built,footer .ds-credit .ds-tagline{color:#fff!important;opacity:1!important}
