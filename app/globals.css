@@ -295,3 +295,39 @@ footer .ds-credit{align-items:center!important;margin:0 auto!important}
 @keyframes zh-glimmer{0%{background-position:100% 0}100%{background-position:0% 0}}
 @media(prefers-reduced-motion:reduce){.insomnia-quote:before,.insomnia-quote:after,.quote:before,.quote:after,.original-quote:after{animation:none!important}}
 @media(max-width:700px){.insomnia-quote:before,.quote:before,.original-quote:after{opacity:.3;animation-duration:35s}.insomnia-quote:after,.quote:after{opacity:.25}}
+
+
+/* Explicit homepage quote fix: do not rely on shared quote selectors or negative stacking */
+section.home-quote.insomnia-quote{
+ display:block!important;width:100%!important;box-sizing:border-box!important;
+ position:relative!important;isolation:isolate!important;overflow:hidden!important;
+ padding:clamp(42px,5vw,76px) 8%!important;
+ background:#dce8df!important;color:#304b43!important;
+ border-top:2px solid #b39762!important;
+}
+section.home-quote.insomnia-quote::before{
+ content:""!important;display:block!important;position:absolute!important;
+ z-index:0!important;inset:-45% -15%!important;
+ background:repeating-radial-gradient(ellipse at 35% 55%,transparent 0 25px,rgba(255,255,255,.55) 28px,rgba(134,170,156,.32) 33px,transparent 40px 68px)!important;
+ opacity:.8!important;animation:zh-home-ripple 16s ease-in-out infinite alternate!important;
+ pointer-events:none!important;
+}
+section.home-quote.insomnia-quote::after{
+ content:""!important;display:block!important;position:absolute!important;
+ z-index:0!important;inset:0!important;
+ background:linear-gradient(110deg,transparent 12%,rgba(255,255,255,.4) 48%,transparent 80%)!important;
+ background-size:200% 100%!important;
+ opacity:.6!important;animation:zh-glimmer 20s ease-in-out infinite alternate!important;
+ pointer-events:none!important;
+}
+section.home-quote.insomnia-quote blockquote,section.home-quote.insomnia-quote span{
+ position:relative!important;z-index:1!important;color:#304b43!important;
+}
+section.home-quote.insomnia-quote span{color:#856e45!important}
+@keyframes zh-home-ripple{
+ from{transform:translate(-2%,-1%) scale(1.01) rotate(-2deg)}
+ to{transform:translate(2%,1%) scale(1.12) rotate(2deg)}
+}
+@media(prefers-reduced-motion:reduce){
+ section.home-quote.insomnia-quote::before,section.home-quote.insomnia-quote::after{animation:none!important}
+}
