@@ -366,3 +366,30 @@ section.insomnia-quote span,section.home-quote.insomnia-quote span{color:#715a35
 @media(prefers-reduced-motion:reduce){
  section.insomnia-quote::before,section.insomnia-quote::after,section.home-quote.insomnia-quote::before,section.home-quote.insomnia-quote::after,section.quote::before,section.quote::after{animation:none!important}
 }
+
+
+/* Insomnia Healing hero aligned with other page openings */
+.insomnia-page .insomnia-hero.insomnia-hero-split{
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+ gap:clamp(28px,5vw,85px);align-items:center;
+ padding:clamp(45px,6vw,95px) max(5%,calc((100vw - 1440px)/2))!important;
+ min-height:640px;background:#f3eee6;
+}
+.insomnia-hero-content{min-width:0;position:relative;z-index:1}
+.insomnia-page .insomnia-hero-split h1{font-size:clamp(39px,4.2vw,67px);line-height:1.09;max-width:700px}
+.insomnia-page .insomnia-hero-split p{max-width:620px}
+.insomnia-hero-photo{
+ width:100%;min-height:490px;align-self:stretch;
+ border-radius:16px 140px 16px 140px;
+ position:relative;overflow:hidden;
+ background:#a8b6ad url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=85') center/cover no-repeat;
+ box-shadow:0 22px 60px rgba(36,58,48,.11);
+}
+.insomnia-hero-photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid #b39762;border-radius:16px 140px 16px 140px;pointer-events:none}
+.insomnia-photo-detail{position:absolute;bottom:20px;right:20px;width:90px;height:90px;border:1px solid #c9b58b;border-radius:50%;pointer-events:none}
+@media(max-width:850px){
+ .insomnia-page .insomnia-hero.insomnia-hero-split{grid-template-columns:1fr;min-height:0;padding:45px 6%!important;gap:28px}
+ .insomnia-hero-photo{min-height:300px;max-height:460px;border-radius:14px 85px 14px 85px}
+ .insomnia-hero-photo::after{border-radius:14px 85px 14px 85px}
+}
+@media(max-width:480px){.insomnia-hero-photo{min-height:250px}.insomnia-page .insomnia-hero-split h1{font-size:clamp(35px,9vw,46px)}}
