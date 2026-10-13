@@ -2,7 +2,7 @@
 import SiteFooter from './components/SiteFooter';
 import {useEffect,useState} from 'react';
 import {ArrowUpRight,ArrowRight,Menu,X,Sun,Brain,Heart, Moon,MoveUpRight,Mail,Phone,MapPin,ChevronDown} from 'lucide-react';
-const mail='handler.zehavah@gmail.com';
+const mail='hello@zehavahhandlertherapy.com';
 const nav=[['Home','/'],['Your Therapy','/your-therapy'],['About Me','/about-me'],['Insomnia Healing','/insomnia-healing'],['Fees','/fees'],['Articles','/articles'],['Contact','/contact']];
 function Reveal({children,className=''}){return <div className={'reveal '+className}>{children}</div>}
 export default function Home(){const[open,setOpen]=useState(false);useEffect(()=>{const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));return()=>observer.disconnect()},[]);return <><div className="preview">PRIVATE DESIGN PREVIEW · CONTENT AND DETAILS SUBJECT TO APPROVAL</div><header className="header"><a href="#" className="brand">zehavah<span>.</span><small>HANDLER THERAPY</small></a><nav className={open?'nav active':'nav'}>{nav.map(([t,h])=><a key={t} href={h} onClick={()=>setOpen(false)}>{t}</a>)}<a className="mobilecontact" href="/contact">Get in touch ↗</a></nav><a href="/contact" className="headcta">Let's talk </a><button aria-label="Toggle navigation" className="menubtn" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></header>
