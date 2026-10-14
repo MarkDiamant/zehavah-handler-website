@@ -495,3 +495,15 @@ footer{background:#2A2D31!important;color:#FBF9F5!important}.ds-credit{font-size
 .insomnia-page .insomnia-hero-content{background:rgba(251,249,245,.80)!important;box-shadow:none!important}
 .detailpage .hero-your-therapy .editorial-visual>img{object-position:center 52%!important}
 .detailpage .hero-articles .editorial-visual>img{object-position:center 48%!important}
+
+/* Final brief alignment: quiet typography, no movement, readable sleep introduction */
+.detailpage .editorial-hero .editorial-copy,.insomnia-page .insomnia-hero-content{box-shadow:none!important}
+.sleep-introduction{background:#FBF9F5!important;text-align:center;max-width:100%!important}
+.sleep-introduction h1{font-family:'Playfair Display',serif!important;font-size:clamp(32px,4vw,52px)!important;line-height:1.18!important;max-width:900px;margin:0 auto 24px}
+.sleep-introduction p{max-width:750px!important;margin:0 auto 16px!important;line-height:1.75}
+.sleep-introduction .button{margin-top:18px}
+.insomnia-page .insomnia-hero-split .insomnia-hero-content .button{display:none!important}
+.insomnia-page .insomnia-hero-split .insomnia-hero-content{margin-left:0!important}
+.insomnia-page .insomnia-hero-split .insomnia-hero-content .insomnia-kicker{color:#7A5F1E!important}
+.calm-site *, .detailpage *, .insomnia-page *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(max-width:760px){.sleep-introduction{padding:50px 6%!important}.sleep-introduction h1{font-size:32px!important}}
