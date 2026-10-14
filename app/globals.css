@@ -552,3 +552,34 @@ footer{background:#2A2D31!important;color:#FBF9F5!important}.ds-credit{font-size
 .detail-page-intro h1{font-family:'Playfair Display',serif!important;color:#2A2D31!important;font-size:clamp(35px,4.5vw,58px)!important;margin:0 0 15px!important;line-height:1.18!important}
 .detail-page-intro p{font-family:'DM Sans',sans-serif;color:#57534e;font-size:17px;margin:0}
 @media(max-width:760px){.detail-page-intro{padding:38px 6% 20px}.detail-page-intro h1{font-size:35px!important}}
+
+/* Mobile optimisation pass: protect small screens from overflow and clipped controls */
+html,body{max-width:100%;overflow-x:clip}
+img,video,iframe{max-width:100%}
+.calm-home-about,.calm-help-grid,.insomnia-grid,.detailsections,.blog-list{min-width:0}
+@media(max-width:760px){
+ .header{height:auto!important;min-height:72px!important;padding:12px 5%!important;gap:9px!important}
+ .header .brand{font-size:25px!important;min-width:0}
+ .header .headcta{margin:0 0 0 auto!important;white-space:nowrap;font-size:11px!important;padding:10px 9px!important}
+ .header .menubtn{flex-shrink:0;padding:8px!important;min-width:40px;min-height:40px}
+ .header .nav.active{max-height:calc(100dvh - 72px);overflow-y:auto}
+ .calm-banner,.detailpage .editorial-hero,.insomnia-page .insomnia-hero-split{padding:16px 5%!important}
+ .calm-banner-quote,.detailpage .editorial-hero .editorial-copy,.insomnia-page .insomnia-hero-content{width:min(90%,390px)!important;max-width:90%!important;padding:12px 15px!important}
+ .calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote,.insomnia-page .sleep-banner-quote blockquote{font-size:clamp(17px,4.6vw,22px)!important;line-height:1.28!important;overflow-wrap:break-word}
+ .detailpage .editorial-hero .editorial-copy .editorial-eyebrow,.insomnia-page .insomnia-kicker{font-size:10px!important}
+ .calm-home-about img{width:100%;height:auto;max-height:420px;object-fit:cover}
+ .calm-help-grid article,.insomnia-grid article{min-width:0}
+ .calm-credentials,.insomnia-ending{overflow-wrap:anywhere}
+ .detailsections{padding:38px 6%!important}
+ .detailsections section{padding:0!important;min-width:0}
+ .blog-list{padding-left:5%!important;padding-right:5%!important}
+ .blog-entry{min-width:0}
+ footer{overflow-wrap:anywhere}
+ footer .footer-email{word-break:break-word}
+}
+@media(max-width:380px){
+ .header .brand{font-size:22px!important}
+ .header .headcta{font-size:10px!important;padding:8px!important}
+ .calm-banner-quote,.detailpage .editorial-hero .editorial-copy,.insomnia-page .insomnia-hero-content{width:95%!important;max-width:95%!important}
+ .calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote,.insomnia-page .sleep-banner-quote blockquote{font-size:17px!important}
+}
