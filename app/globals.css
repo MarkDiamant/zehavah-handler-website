@@ -488,3 +488,10 @@ footer{background:#2A2D31!important;color:#FBF9F5!important}.ds-credit{font-size
 .insomnia-hero-split .insomnia-hero-content{background:rgba(251,249,245,.88);padding:16px 22px;max-width:650px}.insomnia-hero-split .insomnia-hero-content>p,.insomnia-hero-split .insomnia-hero-content>h1{display:none}.insomnia-hero-split .insomnia-hero-photo{position:absolute;inset:0;width:100%;height:100%;z-index:-1}.insomnia-hero-split .insomnia-hero-content{z-index:1}.sleep-banner-quote blockquote{font:400 clamp(21px,2.4vw,32px)/1.3 'Playfair Display',serif;margin:12px 0}.sleep-group-info{margin-top:24px;border:1px solid #ded8cb;padding:25px;background:#FBF9F5}.insomnia-page .insomnia-ending{background:#F4F1EC!important;color:#2A2D31!important}
 @media(max-width:1100px){.header-phone{font-size:11px}.header .nav{gap:12px}}
 @media(max-width:760px){.header-phone{display:none}.banner-inline-quote blockquote{font-size:15px}.detailpage .editorial-hero .editorial-copy{max-width:92%!important}.sleep-banner-quote blockquote{font-size:19px}.insomnia-hero-split .insomnia-hero-content{padding:10px 12px}.insomnia-hero-split .insomnia-hero-content .button{font-size:11px;padding:9px 12px}}
+
+/* Ensure the insomnia banner photograph renders as a real background */
+.insomnia-page .insomnia-hero-split{background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85')!important;background-position:center 55%!important;background-size:cover!important;isolation:isolate}
+.insomnia-page .insomnia-hero-photo{display:none!important}
+.insomnia-page .insomnia-hero-content{background:rgba(251,249,245,.80)!important;box-shadow:none!important}
+.detailpage .hero-your-therapy .editorial-visual>img{object-position:center 52%!important}
+.detailpage .hero-articles .editorial-visual>img{object-position:center 48%!important}
