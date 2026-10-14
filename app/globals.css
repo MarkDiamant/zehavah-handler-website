@@ -547,3 +547,8 @@ footer{background:#2A2D31!important;color:#FBF9F5!important}.ds-credit{font-size
  .calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote,.insomnia-page .sleep-banner-quote blockquote{font-size:clamp(17px,4.5vw,23px)!important}
  .insomnia-page .insomnia-ending p{font-size:13px!important}
 }
+
+.detail-page-intro{background:#FBF9F5;text-align:center;padding:62px 6% 28px}
+.detail-page-intro h1{font-family:'Playfair Display',serif!important;color:#2A2D31!important;font-size:clamp(35px,4.5vw,58px)!important;margin:0 0 15px!important;line-height:1.18!important}
+.detail-page-intro p{font-family:'DM Sans',sans-serif;color:#57534e;font-size:17px;margin:0}
+@media(max-width:760px){.detail-page-intro{padding:38px 6% 20px}.detail-page-intro h1{font-size:35px!important}}
