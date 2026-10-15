@@ -588,7 +588,7 @@ img,video,iframe{max-width:100%}
 .detailpage h1,.detailpage h2,.insomnia-page h1,.insomnia-page h2,.calm-site h1,.calm-site h2,.privacy-page h1,.privacy-page h2{font-family:'Playfair Display',serif!important;font-weight:400!important;letter-spacing:-.025em!important}
 .header .brand,.footer-brand{font-family:'Playfair Display',serif!important;font-size:clamp(19px,2.1vw,29px)!important;font-weight:400!important;letter-spacing:0!important;line-height:1.08!important;white-space:nowrap}
 .header .brand small,.footer-brand small{font-family:'DM Sans',sans-serif!important;font-size:10px!important;font-weight:500!important;letter-spacing:.07em!important;line-height:1.5!important}
-.calm-banner-quote,.detailpage .editorial-hero .editorial-copy,.insomnia-page .insomnia-hero-content{max-width:370px}
+.calm-banner-quote,.detailpage .banner-inline-quote,.insomnia-page .sleep-banner-quote{max-width:370px}
 @media(max-width:760px){.calm-banner-quote,.detailpage .banner-inline-quote{max-width:300px!important}.calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote{font-size:clamp(16px,4.3vw,21px)!important}.header .brand{font-size:21px!important;white-space:normal}.header .brand small{font-size:9px!important}}
 .privacy-form-note{font-size:13px;color:#57534e}.privacy-form-note a,.privacy-page a{text-decoration:underline;text-underline-offset:3px}
 .insomnia-hero-photo{background-image:url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=85')!important}
