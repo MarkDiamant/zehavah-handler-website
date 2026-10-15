@@ -615,3 +615,28 @@ img,video,iframe{max-width:100%}
  .calm-banner-quote,.detailpage .banner-inline-quote,.insomnia-page .sleep-banner-quote{max-width:205px!important;padding:7px 9px!important}
  .calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote,.insomnia-page .sleep-banner-quote blockquote{font-size:13px!important}
 }
+
+/* Tighten mobile quote headings and remove inherited vertical gaps */
+@media(max-width:760px){
+ .calm-banner-quote,.detailpage .banner-inline-quote,.insomnia-page .sleep-banner-quote{
+  display:flex!important;flex-direction:column!important;justify-content:flex-start!important;
+  gap:2px!important;padding:5px 8px!important;
+  max-width:min(68vw,215px)!important;
+  min-height:0!important;height:auto!important;
+ }
+ .calm-banner-quote blockquote,.detailpage .banner-inline-quote blockquote,.insomnia-page .sleep-banner-quote blockquote{
+  margin:0!important;padding:0!important;
+  font-size:clamp(12px,3.3vw,15px)!important;line-height:1.16!important;
+ }
+ .calm-banner-quote span,.detailpage .banner-inline-quote span,.insomnia-page .sleep-banner-quote span{
+  display:block!important;margin:0!important;padding:0!important;
+  line-height:1.15!important;font-size:8px!important;
+ }
+ .detailpage .editorial-hero .editorial-copy .editorial-eyebrow,
+ .insomnia-page .insomnia-hero-content .insomnia-kicker{
+  margin-bottom:4px!important;padding-bottom:0!important;
+ }
+}
+@media(max-width:380px){
+ .calm-banner-quote,.detailpage .banner-inline-quote,.insomnia-page .sleep-banner-quote{max-width:190px!important;padding:5px 7px!important}
+}
