@@ -640,3 +640,24 @@ img,video,iframe{max-width:100%}
 @media(max-width:380px){
  .calm-banner-quote,.detailpage .banner-inline-quote,.insomnia-page .sleep-banner-quote{max-width:190px!important;padding:5px 7px!important}
 }
+
+/* Client-supplied photographs, 16 October 2026. Keep existing text and page structure. */
+.calm-site .home-banner{
+ background-image:linear-gradient(90deg,rgba(251,249,245,0) 35%,rgba(251,249,245,.18) 65%,rgba(251,249,245,.34) 100%),url('https://res.cloudinary.com/ds3zepqin/image/upload/f_auto,q_auto/v1792167881/zehavah-handler/website/home-hero.png')!important;
+ background-position:center center!important;
+ background-size:cover!important;
+}
+.detailpage .hero-your-therapy .editorial-visual img,
+.detailpage .hero-contact .editorial-visual img{
+ width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;
+}
+.detailpage .hero-your-therapy .editorial-visual,
+.detailpage .hero-contact .editorial-visual{overflow:hidden!important}
+@media(max-width:760px){
+ .calm-site .home-banner{
+  background-position:40% center!important;
+  background-image:linear-gradient(90deg,rgba(251,249,245,0) 25%,rgba(251,249,245,.18) 100%),url('https://res.cloudinary.com/ds3zepqin/image/upload/f_auto,q_auto/v1792167881/zehavah-handler/website/home-hero.png')!important;
+ }
+ .detailpage .hero-your-therapy .editorial-visual img{object-position:51% center!important}
+ .detailpage .hero-contact .editorial-visual img{object-position:53% center!important}
+}
