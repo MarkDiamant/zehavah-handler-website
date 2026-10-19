@@ -692,3 +692,10 @@ img,video,iframe{max-width:100%}
 .detailpage:has(.hero-articles) .detail-page-intro p{margin-bottom:0!important}
 .detailpage:has(.hero-articles) .blog-list{margin-top:0!important;padding-top:0!important}
 @media(max-width:760px){.detailpage:has(.hero-articles) .detail-page-intro{padding-top:6px!important;padding-bottom:0!important}}
+
+/* Explicit Articles layout: remove legacy 80px list margin and oversized card padding. */
+.articles-page .detail-page-intro{padding:20px 6% 8px!important}
+.articles-page .detail-page-intro p{margin:0!important}
+.articles-page .blog-list{margin:0 auto 45px!important;padding-top:0!important;align-content:start!important}
+.articles-page .blog-entry{padding-top:10px!important}
+@media(max-width:760px){.articles-page .detail-page-intro{padding:14px 6% 6px!important}.articles-page .blog-list{margin-top:0!important}.articles-page .blog-entry{padding-top:6px!important}}
