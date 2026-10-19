@@ -673,3 +673,6 @@ img,video,iframe{max-width:100%}
 
 /* Articles page: remove the oversized blank space between intro subtitle and first article card. */
 @media(min-width:761px){.detailpage:has(.hero-articles) .detail-page-intro{padding-bottom:8px!important}.detailpage:has(.hero-articles) .blog-list{margin-top:18px!important}}
+
+/* Second desktop spacing reduction requested for Articles page. */
+@media(min-width:761px){.detailpage:has(.hero-articles) .detail-page-intro{padding-bottom:0!important}.detailpage:has(.hero-articles) .blog-list{margin-top:0!important}.detailpage:has(.hero-articles) .detail-page-intro{padding-top:38px!important}}
