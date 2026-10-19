@@ -661,3 +661,9 @@ img,video,iframe{max-width:100%}
  .detailpage .hero-your-therapy .editorial-visual img{object-position:51% center!important}
  .detailpage .hero-contact .editorial-visual img{object-position:53% center!important}
 }
+
+/* Prevent missing legacy WordPress photos from appearing as broken images */
+.calm-about-photo-placeholder{min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:30px;background:linear-gradient(145deg,#ded8d0,#f0ebe4);color:#373b35;font-family:Georgia,serif;font-size:clamp(28px,4vw,48px)}
+.calm-about-photo-placeholder small{font-family:Arial,sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+.calm-logos span{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border:1px solid #9d9588;border-radius:4px;font-weight:600;font-size:15px}
+@media(max-width:760px){.calm-about-photo-placeholder{min-height:220px}}
