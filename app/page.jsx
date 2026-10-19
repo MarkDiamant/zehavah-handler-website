@@ -1,6 +1,6 @@
 import SiteHeader from './components/SiteHeader';
 import SiteFooter from './components/SiteFooter';
-const portrait='https://zehavahhandlertherapy.com/wp-content/uploads/2022/03/zehava-1.jpg';
+const portrait='https://res.cloudinary.com/ds3zepqin/image/upload/f_auto,q_auto/v1792167896/zehavah-handler/website/contact-hero.png';
 export default function Home(){return <><SiteHeader/><main className="calm-site">
 <section className="calm-banner home-banner"><div className="calm-banner-quote"><blockquote>“Be yourself; everyone else is already taken”</blockquote><span>OSCAR WILDE</span></div></section>
 <section className="calm-home-intro"><p className="calm-kicker">PSYCHOTHERAPIST &amp; SLEEP SPECIALIST · FINCHLEY, NW LONDON &amp; ONLINE</p><h1>When things feel not quite right.</h1><p>Psychotherapy, and specialist help with sleep.</p><p>A safe, confidential space to talk things through.</p><p>In Finchley, North London, and online.</p><div className="calm-actions"><a className="calm-button" href="/contact">Get in touch</a><a className="calm-textlink" href="/insomnia-healing">Help with sleep →</a></div><small>I aim to reply within one working day.</small></section>
