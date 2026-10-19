@@ -686,3 +686,9 @@ img,video,iframe{max-width:100%}
 .detailpage:has(.hero-articles) .detail-page-intro{padding-top:18px!important;padding-bottom:0!important}
 .detailpage:has(.hero-articles) .blog-list{margin-top:0!important}
 @media(max-width:760px){.detailpage:has(.hero-articles) .detail-page-intro{padding-top:12px!important;padding-bottom:0!important}.detailpage:has(.hero-articles) .blog-list{margin-top:0!important}}
+
+/* Articles: bring cards immediately beneath subtitle, overriding earlier spacing rules. */
+.detailpage:has(.hero-articles) .detail-page-intro{padding-top:8px!important;padding-bottom:0!important}
+.detailpage:has(.hero-articles) .detail-page-intro p{margin-bottom:0!important}
+.detailpage:has(.hero-articles) .blog-list{margin-top:0!important;padding-top:0!important}
+@media(max-width:760px){.detailpage:has(.hero-articles) .detail-page-intro{padding-top:6px!important;padding-bottom:0!important}}
