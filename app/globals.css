@@ -670,3 +670,6 @@ img,video,iframe{max-width:100%}
 
 /* Reduce excessive desktop gap between homepage banner photograph and introductory heading. */
 @media(min-width:761px){.calm-site .home-banner{height:clamp(340px,34vw,500px)!important;min-height:0!important;max-height:500px!important}.calm-site .calm-home-intro{padding-top:42px!important}}
+
+/* Articles page: remove the oversized blank space between intro subtitle and first article card. */
+@media(min-width:761px){.detailpage:has(.hero-articles) .detail-page-intro{padding-bottom:8px!important}.detailpage:has(.hero-articles) .blog-list{margin-top:18px!important}}
