@@ -699,3 +699,7 @@ img,video,iframe{max-width:100%}
 .articles-page .blog-list{margin:0 auto 45px!important;padding-top:0!important;align-content:start!important}
 .articles-page .blog-entry{padding-top:10px!important}
 @media(max-width:760px){.articles-page .detail-page-intro{padding:14px 6% 6px!important}.articles-page .blog-list{margin-top:0!important}.articles-page .blog-entry{padding-top:6px!important}}
+
+/* Fine-tune Articles spacing on desktop and mobile. */
+@media(min-width:761px){.detailpage:has(.hero-articles) .blog-list{margin-top:12px!important}}
+@media(max-width:760px){.detailpage:has(.hero-articles) .blog-list{margin-top:12px!important}}
