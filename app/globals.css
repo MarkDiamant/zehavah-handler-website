@@ -667,3 +667,6 @@ img,video,iframe{max-width:100%}
 .calm-about-photo-placeholder small{font-family:Arial,sans-serif;font-size:14px;letter-spacing:.12em;text-transform:uppercase}
 .calm-logos span{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border:1px solid #9d9588;border-radius:4px;font-weight:600;font-size:15px}
 @media(max-width:760px){.calm-about-photo-placeholder{min-height:220px}}
+
+/* Reduce excessive desktop gap between homepage banner photograph and introductory heading. */
+@media(min-width:761px){.calm-site .home-banner{height:clamp(340px,34vw,500px)!important;min-height:0!important;max-height:500px!important}.calm-site .calm-home-intro{padding-top:42px!important}}
